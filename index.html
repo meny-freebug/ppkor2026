@@ -36,13 +36,13 @@
         }
         .bar-fill { background-color: #7c3aed; height: 100%; border-radius: 9999px; }
         
-        .img-featured { width: 100%; height: 400px; object-fit: cover; border-radius: 2rem; }
-        .img-section { width: 100%; height: 300px; object-fit: cover; border-radius: 1.5rem; }
+        .img-featured { width: 100%; height: 380px; object-fit: cover; border-radius: 1.5rem; }
+        .img-section { width: 100%; height: 280px; object-fit: cover; border-radius: 1.5rem; }
         
-        /* Justert fokus: Zoomer litt ut og fokuserer mot venstre for rosa lue */
+        /* Fokus på gjengen med rosa lue til venstre */
         .pink-hat-focus {
             object-fit: cover;
-            object-position: 15% center;
+            object-position: 25% center;
         }
         .face-focus { object-fit: cover; object-position: center 20%; }
         .section-container { break-inside: avoid; }
@@ -50,160 +50,210 @@
 </head>
 <body class="max-w-4xl mx-auto border-x border-gray-50 shadow-lg">
 
-    <!-- Header - Stor logo helt til venstre -->
-    <header class="gradient-bg text-white p-8 flex flex-row items-center gap-10 section-container">
-        <div class="bg-white p-4 rounded-3xl shadow-xl shrink-0">
-            <img src="PPlogo.png" alt="[Perfect Pitch Logo]" class="h-24 md:h-32 w-auto object-contain" onerror="this.src='PPlogo.jpg'">
+    <!-- Header - Bruker PPlogo.jpg -->
+    <header class="gradient-bg text-white p-6 flex flex-row items-center gap-8 section-container">
+        <div class="bg-white p-3 rounded-2xl shadow-md shrink-0">
+            <img src="PPlogo.jpg" alt="Perfect Pitch Logo" class="h-20 md:h-24 w-auto object-contain">
         </div>
         <div>
-            <h1 class="text-4xl md:text-5xl font-black tracking-tighter uppercase italic leading-tight">Perfect Pitch</h1>
-            <p class="text-purple-200 text-sm font-bold uppercase tracking-[0.4em] mt-2">Årsrapport & Roadmap 2026</p>
+            <h1 class="text-3xl md:text-4xl font-black tracking-tighter uppercase italic leading-tight">Perfect Pitch</h1>
+            <p class="text-purple-200 text-xs font-bold uppercase tracking-[0.3em] mt-1">Årsrapport & Roadmap 2026</p>
         </div>
     </header>
 
-    <!-- Hero -->
-    <div class="px-8 section-container mt-8">
-        <div class="relative h-[380px] rounded-[3rem] overflow-hidden shadow-md">
-            <img src="DSC_8252.jpg" alt="[Koret på scenen]" class="w-full h-full object-cover object-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-10 text-white">
+    <!-- Hero - Bruker et bilde fra scenen -->
+    <div class="px-6 section-container mt-6">
+        <div class="relative h-[320px] rounded-[2.5rem] overflow-hidden shadow-md">
+            <img src="PHOTO-2026-03-11-07-37-08.jpg" alt="Koret på scenen" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white text-center md:text-left">
                 <p class="text-purple-400 font-black uppercase tracking-widest mb-1 text-xs italic">Markedsvalidering</p>
-                <h2 class="text-3xl md:text-4xl font-black italic uppercase leading-tight">100+ solgte billetter & vi imponerte stort!</h2>
-                <p class="text-base text-purple-200 font-medium italic mt-2 max-w-xl">Vår debutreise handlet om å skape magi på scenen og ekte samhold.</p>
+                <h2 class="text-2xl md:text-3xl font-black italic uppercase leading-tight">100+ solgte billetter & vi imponerte stort!</h2>
+                <p class="text-sm text-purple-200 font-medium italic mt-2 max-w-xl">Vår debutreise handlet om å skape magi på scenen og ekte samhold.</p>
             </div>
         </div>
     </div>
 
     <!-- KPI Section -->
-    <div class="grid grid-cols-4 border-y border-gray-100 bg-gray-50/50 section-container mt-10">
-        <div class="p-8 border-r border-gray-100 text-center">
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1 italic">Øvelser 2026</p>
-            <p class="text-4xl font-black text-purple-700 italic leading-none">14</p>
-            <p class="text-[9px] text-gray-500 mt-2 font-bold uppercase italic">5 gjenstår</p>
+    <div class="grid grid-cols-4 border-y border-gray-100 bg-gray-50/50 section-container mt-8 text-center">
+        <div class="p-6 border-r border-gray-100">
+            <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-0.5 italic">Øvelser 2026</p>
+            <p class="text-3xl font-black text-purple-700 italic leading-none">14</p>
+            <p class="text-[8px] text-gray-500 mt-1 font-bold uppercase">5 gjenstår</p>
         </div>
-        <div class="p-8 border-r border-gray-100 text-center">
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1 italic">Medlemmer</p>
-            <p class="text-4xl font-black text-purple-700 italic leading-none">23</p>
-            <p class="text-[9px] text-gray-500 mt-2 font-bold uppercase italic">+ 2 dirigenter</p>
+        <div class="p-6 border-r border-gray-100">
+            <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-0.5 italic">Medlemmer</p>
+            <p class="text-3xl font-black text-purple-700 italic leading-none">23</p>
+            <p class="text-[8px] text-gray-500 mt-1 font-bold uppercase">+ 2 dirigenter</p>
         </div>
-        <div class="p-8 border-r border-gray-100 text-center">
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1 italic">Billettsalg</p>
-            <p class="text-4xl font-black text-purple-700 italic leading-none">100+</p>
-            <p class="text-[9px] text-gray-500 mt-2 font-bold uppercase italic">Massiv effekt</p>
+        <div class="p-6 border-r border-gray-100">
+            <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-0.5 italic">Billettsalg</p>
+            <p class="text-3xl font-black text-purple-700 italic leading-none">100+</p>
+            <p class="text-[8px] text-gray-500 mt-1 font-bold uppercase italic">Massiv effekt</p>
         </div>
-        <div class="p-8 text-center">
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1 italic">Vannhull</p>
-            <p class="text-4xl font-black text-purple-700 italic leading-none">~75k</p>
-            <p class="text-[9px] text-gray-500 mt-2 font-bold uppercase italic">Bidratt</p>
+        <div class="p-6">
+            <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-0.5 italic">Vannhull</p>
+            <p class="text-3xl font-black text-purple-700 italic leading-none">~75k</p>
+            <p class="text-[8px] text-gray-500 mt-1 font-bold uppercase">Bidratt</p>
         </div>
     </div>
 
-    <main class="p-8 space-y-24">
+    <main class="p-6 space-y-16">
         
-        <!-- Medlemsanalysen -->
+        <!-- Medlemsanalysen - Rosa lue -->
         <section class="section-container">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div class="space-y-8">
-                    <h3 class="text-3xl font-black text-gray-800 uppercase italic border-l-8 border-purple-600 pl-6 italic">Medlemsanalysen: Fremtiden er spisset</h3>
-                    <div class="space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-black text-gray-800 uppercase italic border-l-8 border-purple-600 pl-5 italic">Medlemsanalysen: Fremtiden er spisset</h3>
+                    <div class="space-y-6">
                         <div>
-                            <div class="flex justify-between mb-2 text-xs font-black uppercase italic">
+                            <div class="flex justify-between mb-1.5 text-[10px] font-black uppercase italic">
                                 <span class="text-gray-500">Øvingsfrekvens: Positiv feedback</span>
                                 <span class="text-purple-600 font-black">84% Positive</span>
                             </div>
-                            <div class="flex h-4 w-full bg-gray-100 rounded-full overflow-hidden">
+                            <div class="flex h-3 w-full bg-gray-100 rounded-full overflow-hidden">
                                 <div class="bg-purple-600 h-full" style="width: 67%"></div>
                                 <div class="bg-purple-400 h-full" style="width: 17%"></div>
                                 <div class="bg-gray-200 h-full" style="width: 16%"></div>
                             </div>
-                            <p class="text-[10px] mt-2 text-gray-500 italic italic">84 % er positive til nåværende eller hyppigere frekvens (67 % optimalt + 17 % oftere).</p>
+                            <p class="text-[9px] mt-2 text-gray-500 italic">84 % er positive til nåværende eller hyppigere frekvens (67 % optimalt + 17 % oftere).</p>
                         </div>
-                        <div class="bg-purple-50 p-8 rounded-[2.5rem] border border-purple-100 italic">
-                            <h4 class="font-black text-purple-900 uppercase text-sm mb-4">Hvem skal være med?</h4>
-                            <p class="text-purple-800 text-base leading-relaxed mb-6">
+                        <div class="bg-purple-50 p-6 rounded-[2rem] border border-purple-100 italic">
+                            <h4 class="font-black text-purple-900 uppercase text-sm mb-3">Hvem skal være med?</h4>
+                            <p class="text-purple-800 text-xs leading-relaxed mb-4">
                                 Vi bevarer gründer-identiteten for å sikre korets unike verdi:
                             </p>
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-sm border border-purple-100">
-                                    <span class="font-black text-gray-700 italic text-sm">The Builders (Gründere + ansatte)</span>
-                                    <span class="bg-purple-600 text-white px-4 py-1 rounded-full text-[10px] font-black italic">50%</span>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center bg-white p-3 rounded-xl shadow-sm border border-purple-100">
+                                    <span class="font-black text-gray-700 italic text-xs">The Builders (Gründere + ansatte)</span>
+                                    <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-[10px] font-black">50%</span>
                                 </div>
-                                <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-sm border border-purple-100">
-                                    <span class="font-black text-gray-700 italic text-sm">Startup Village (Invester, inkubatorer etc)</span>
-                                    <span class="bg-purple-400 text-white px-4 py-1 rounded-full text-[10px] font-black italic">33%</span>
+                                <div class="flex justify-between items-center bg-white p-3 rounded-xl shadow-sm border border-purple-100">
+                                    <span class="font-black text-gray-700 italic text-xs">Startup Village (Invester, inkubatorer etc)</span>
+                                    <span class="bg-purple-400 text-white px-3 py-1 rounded-full text-[10px] font-black">33%</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Bildet med rosa lue til venstre, zoomet litt ut -->
-                <img src="PHOTO-2026-01-06-18-25-39.jpg" alt="[Bilde fra øvelse med rosa lue]" class="img-featured h-[550px] pink-hat-focus shadow-lg">
+                <img src="PHOTO-2026-01-06-18-25-39.jpg" alt="Bilde fra øvelse med rosa lue" class="img-featured h-[450px] pink-hat-focus shadow-lg">
             </div>
         </section>
 
-        <!-- Presseomtale -->
+        <!-- Presseomtale - Bruker Shifterbilde.jpg -->
         <section class="section-container bg-slate-900 rounded-[3rem] overflow-hidden text-white flex flex-col md:flex-row shadow-lg italic">
             <div class="md:w-1/2">
-                <img src="Shifterbilde.png" alt="[Shifter Artikkel]" class="w-full h-full object-cover" onerror="this.src='Shifterbilde.jpg'">
+                <img src="Shifterbilde.jpg" alt="Shifter" class="w-full h-full object-cover">
             </div>
-            <div class="md:w-1/2 p-12 flex flex-col justify-center italic">
-                <p class="text-purple-400 font-bold text-sm uppercase tracking-widest mb-4 italic">Strategisk Synlighet</p>
-                <h3 class="text-3xl font-black uppercase leading-tight italic">"De korer om det harde gründerlivet"</h3>
-                <p class="text-gray-400 text-lg mt-6 leading-relaxed italic">
+            <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                <p class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-3 italic">Strategisk Synlighet</p>
+                <h3 class="text-2xl font-black uppercase leading-tight italic">"De korer om det harde gründerlivet"</h3>
+                <p class="text-gray-400 text-sm mt-4 leading-relaxed italic">
                     Omtalen i Shifter bekrefter at vi fyller et tomrom. Vi er ikke bare et kor, vi er stemmen til hele økosystemet.
                 </p>
-                <div class="mt-8">
-                    <a href="https://www.shifter.no/nyheter/konkurs-pengetorke-og-investorjakt-de-korer-om-det-harde-gruenderlivet/457093" target="_blank" class="text-sm font-bold underline hover:text-purple-300 italic transition-colors">Se saken hos Shifter &rarr;</a>
+                <div class="mt-6">
+                    <a href="https://www.shifter.no/nyheter/konkurs-pengetorke-og-investorjakt-de-korer-om-det-harde-gruenderlivet/457093" target="_blank" class="text-xs font-bold underline hover:text-purple-300">Se saken hos Shifter &rarr;</a>
                 </div>
             </div>
         </section>
 
-        <!-- Repertoar -->
-        <section class="section-container space-y-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-white border border-gray-100 p-10 rounded-[3rem] shadow-sm space-y-8 italic">
-                    <h3 class="text-2xl font-black text-gray-800 uppercase italic border-l-4 border-purple-600 pl-4">The Keepers: Repertoar</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-base border border-purple-100"><span>Optimist / Penger, penger</span><span>100%</span></div>
-                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-base border border-purple-100"><span>Gründer-vuggesang / Unstoppable</span><span>83%</span></div>
-                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-base border border-purple-100"><span>Lean on me / Under Pressure</span><span>67%</span></div>
-                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-base border border-purple-100"><span>Fix You / Se Ilden Lyse / Still Standing</span><span>50%</span></div>
+        <!-- Repertoar og Bilde -->
+        <section class="section-container space-y-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white border border-gray-100 p-8 rounded-[2.5rem] shadow-sm space-y-6 italic">
+                    <h3 class="text-xl font-black text-gray-800 uppercase italic border-l-4 border-purple-600 pl-4">The Keepers: Repertoar</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-sm border border-purple-100 shadow-sm"><span>Optimist / Penger, penger</span><span>100%</span></div>
+                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-sm border border-purple-100 shadow-sm"><span>Gründer-vuggesang / Unstoppable</span><span>83%</span></div>
+                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-sm border border-purple-100 shadow-sm"><span>Lean on me / Under Pressure</span><span>67%</span></div>
+                        <div class="flex justify-between p-4 bg-purple-50 rounded-xl font-black text-purple-900 italic text-sm border border-purple-100 shadow-sm"><span>Fix You / Se Ilden Lyse / Still Standing</span><span>50%</span></div>
                     </div>
-                    <img src="DSC_8234.jpg" alt="[Koret på scenen]" class="img-section h-64 shadow-md">
                 </div>
-                <div class="bg-gray-900 p-10 rounded-[3rem] text-white shadow-xl flex flex-col italic">
-                    <h3 class="text-2xl font-black uppercase tracking-widest mb-8 italic border-b border-gray-800 pb-4">Backlog: Nye Muligheter</h3>
-                    <div class="grid grid-cols-1 gap-y-4 text-xl font-bold italic opacity-95">
-                        <ul class="space-y-3">
-                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4 shadow-lg"></span> The Gambler</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Start me up (Stones)</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Billionaire / All I do is win</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Winner takes it all / Crazy</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Don't stop believing / Final Countdown</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Show must go on / It's a hard knock life</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> How far will I go / Mitt liv</li>
-                        </ul>
-                    </div>
-                    <!-- Bildet fra den 13. lagt inn her -->
-                    <img src="PHOTO-2026-01-13-19-11-13.jpg" alt="[Korglede]" class="img-section h-48 mt-6 shadow-md">
+                
+                <div class="rounded-[2.5rem] overflow-hidden shadow-lg">
+                    <img src="PHOTO-2026-03-11-09-35-07.jpg" alt="Koret i aksjon" class="w-full h-full object-cover">
                 </div>
             </div>
+        </section>
+
+        <!-- Pipeline og Glede -->
+        <section class="section-container grid grid-cols-1 md:grid-cols-2 gap-10 italic">
+            <div class="bg-gray-900 p-8 rounded-[2.5rem] text-white shadow-xl flex flex-col">
+                <h3 class="text-xl font-black uppercase tracking-widest mb-6 italic border-b border-gray-800 pb-4">Backlog: Nye Muligheter</h3>
+                <div class="grid grid-cols-1 gap-y-4 text-lg font-bold opacity-95">
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4 shadow-lg"></span> The Gambler</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Start me up (Stones)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Billionaire / All I do is win</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Winner takes it all / Crazy</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Don't stop believing / Final Countdown</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> Show must go on / It's a hard knock life</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-4"></span> How far will I go / Mitt liv</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="PHOTO-2026-01-13-19-11-13.jpg" alt="Glede i koret" class="img-section h-full shadow-md">
         </section>
 
         <!-- Team & Stemmer -->
         <section class="section-container">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
-                <div class="bg-white border border-gray-100 p-10 rounded-[3rem] space-y-8 shadow-sm italic">
-                    <h3 class="text-2xl font-black text-gray-800 uppercase italic">Team Metrics</h3>
-                    <ul class="space-y-5 font-bold text-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="bg-white border border-gray-100 p-8 rounded-[2.5rem] space-y-6 shadow-sm italic text-center">
+                    <h3 class="text-xl font-black text-gray-800 uppercase italic">Team Metrics</h3>
+                    <ul class="space-y-4 font-bold text-lg">
                         <li class="flex justify-between border-b border-gray-50 pb-2"><span>Sopran</span><span class="text-purple-600">4</span></li>
                         <li class="flex justify-between border-b border-gray-50 pb-2"><span>Alt</span><span class="text-purple-600">6</span></li>
-                        <li class="flex justify-between border-b border-gray-50 pb-2 text-purple-700 font-black italic"><span>Tenor (Powerhouse)</span><span>10</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2 text-purple-700 font-black italic"><span>Tenor</span><span>10</span></li>
                         <li class="flex justify-between"><span>Bass</span><span class="text-purple-600">3</span></li>
                     </ul>
-                    <img src="DSC_8121.jpg" alt="[Stemmekontroll]" class="img-section h-48 face-focus shadow-md">
+                    <!-- Bruker et annet bilde for team-seksjonen -->
+                    <img src="PHOTO-2025-09-09-20-58-30.jpg" alt="Stemmekontroll" class="img-section h-48 face-focus shadow-md">
                 </div>
-                <div class="md:col-span-2 space-y-8">
-                    <img src="PHOTO-2025-09-09-20-58-30.jpg" alt="[Samhold]" class="img-featured h-[380px] shadow-md">
-                    <div class="grid grid-cols-2 gap-8">
-                        <img src="DSC_8127.jpg" alt="[Smil]" class="img-section h-64 shadow-sm">
-                        <img src="PHOTO-2025-06-18-07-52-18.jpg" alt="[Gjengen]" class="img-section h-64 shadow-
+                <div class="md:col-span-2 grid grid-cols-2 gap-6 italic">
+                    <img src="PHOTO-2025-06-18-07-52-18.jpg" alt="Smil" class="img-section h-full shadow-sm">
+                    <img src="PHOTO-2025-12-02-18-32-08.jpg" alt="Gjeng" class="img-section h-full shadow-sm">
+                </div>
+            </div>
+        </section>
+
+        <!-- Community & Roadmap -->
+        <section class="section-container space-y-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <img src="PHOTO-2025-12-02-18-32-08.jpg" alt="Skyggesiden" class="img-featured h-[350px]">
+                <div class="bg-gray-50 p-10 rounded-[3rem] border border-gray-100 flex flex-col justify-center italic text-center">
+                    <h4 class="text-2xl font-black uppercase italic mb-6 leading-tight">Sangglede og fellesskap</h4>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        <strong>Skyggesiden</strong> er vårt faste samlingspunkt. Her lever sanggleden videre etter øving, og her bygger vi de sterke båndene som er selve hjertet i Perfect Pitch.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gradient-bg rounded-[3.5rem] p-12 text-white shadow-xl flex flex-col md:flex-row items-center gap-12 italic">
+                <div class="md:w-1/2 space-y-8">
+                    <h3 class="text-4xl font-black uppercase leading-tight italic">Roadmap Q2</h3>
+                    <ul class="space-y-6 text-xl font-bold italic">
+                        <li class="flex items-center"><span class="w-8 h-8 bg-purple-300 rounded-full mr-6 flex items-center justify-center text-purple-900 text-sm font-black italic">1</span> 23. April: Stor Kor-fest 🚀</li>
+                        <li class="flex items-center"><span class="w-8 h-8 bg-purple-300 rounded-full mr-6 flex items-center justify-center text-purple-900 text-sm font-black italic">2</span> Siste 5 øvelser</li>
+                        <li class="flex items-center"><span class="w-8 h-8 bg-purple-300 rounded-full mr-6 flex items-center justify-center text-purple-900 text-sm font-black italic">3</span> Sommeravslutning</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-6">
+                    <img src="PHOTO-2025-12-02-18-32-08.jpg" alt="Fest" class="img-section h-56 shadow-lg">
+                    <img src="PHOTO-2026-03-11-07-37-08.jpg" alt="Konsert" class="img-section h-56 shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bilder nederst -->
+        <section class="section-container grid grid-cols-2 gap-8">
+            <img src="PHOTO-2025-06-18-07-52-18 (1).jpg" alt="Fellesskap 1" class="img-section h-[380px] shadow-md">
+            <img src="PHOTO-2025-06-18-07-52-18 (2).jpg" alt="Fellesskap 2" class="img-section h-[380px] shadow-md">
+        </section>
+
+    </main>
+
+    <footer class="p-12 text-center border-t border-gray-100 text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] italic section-container">
+        Perfect Pitch &mdash; Sangglede & Fellesskap
+    </footer>
+
+</body>
+</html>
