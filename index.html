@@ -13,138 +13,256 @@
         .pitch-bg { background-color: #6b21a8; }
         
         /* Bildeinnstillinger */
-        .img-featured { width: 100%; height: 550px; object-fit: cover; border-radius: 2.5rem; }
-        .img-concert { width: 100%; height: 300px; object-fit: cover; border-radius: 1.5rem; }
+        .img-featured { width: 100%; height: 600px; object-fit: cover; border-radius: 3.5rem; }
+        .img-concert { width: 100%; height: 350px; object-fit: cover; border-radius: 1.5rem; }
         .pink-hat-focus { object-fit: cover; object-position: 25% center; }
         
-        /* Navigasjonstilstander */
-        .nav-active { color: #d8b4fe; border-bottom: 3px solid #d8b4fe; }
+        /* Navigasjon */
+        .nav-active { color: #d8b4fe; border-bottom: 4px solid #d8b4fe; }
         .page-section { display: none; }
         .page-section.active { display: block; }
 
-        .statutes-grid p { margin-bottom: 1.5rem; font-size: 1.125rem; }
-        .statutes-grid strong { color: #1e293b; display: block; margin-top: 2rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em; font-weight: 900; }
+        /* Typografi-skalering for bedre lesbarhet */
+        h1, h2, h3 { letter-spacing: -0.02em; }
+        .statutes-grid p { margin-bottom: 2rem; font-size: 1.25rem; }
+        .statutes-grid strong { color: #1e293b; display: block; margin-top: 3.5rem; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 0.1em; font-weight: 900; }
 
         @media print {
             .no-print { display: none !important; }
             .page-section { display: block !important; margin-bottom: 4rem; }
-            body { font-size: 12pt; }
         }
     </style>
 </head>
 <body class="max-w-7xl mx-auto border-x border-gray-100 shadow-2xl min-h-screen flex flex-col italic">
 
     <!-- Navigasjon -->
-    <nav class="no-print sticky top-0 z-50 bg-slate-900 text-white p-5 flex justify-center gap-8 md:gap-16 text-xs font-black uppercase tracking-widest italic">
+    <nav class="no-print sticky top-0 z-50 bg-slate-900 text-white p-6 flex justify-center gap-10 md:gap-20 text-sm font-black uppercase tracking-widest italic">
         <a href="#rapport" onclick="showPage('rapport')" id="link-rapport" class="nav-active hover:text-purple-300 transition-colors py-2">Årsrapport</a>
         <a href="#kulturkode" onclick="showPage('kulturkode')" id="link-kulturkode" class="hover:text-purple-300 transition-colors py-2">Kulturkode</a>
         <a href="#vedtekter" onclick="showPage('vedtekter')" id="link-vedtekter" class="hover:text-purple-300 transition-colors py-2">Vedtekter</a>
     </nav>
 
     <!-- Header -->
-    <header class="gradient-bg text-white p-10 flex flex-col md:flex-row items-center gap-10">
-        <div class="bg-white p-4 rounded-3xl shadow-2xl shrink-0">
-            <img src="PPlogo.png" alt="Perfect Pitch Logo" class="h-20 md:h-28 w-auto object-contain" onerror="this.src='PPlogo.jpg'">
+    <header class="gradient-bg text-white p-12 flex flex-col md:flex-row items-center gap-12">
+        <div class="bg-white p-5 rounded-[2.5rem] shadow-2xl shrink-0">
+            <img src="PPlogo.png" alt="Perfect Pitch Logo" class="h-28 md:h-36 w-auto object-contain" onerror="this.src='PPlogo.jpg'">
         </div>
         <div class="text-center md:text-left">
-            <h1 class="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-none italic">Perfect Pitch</h1>
-            <p class="text-purple-200 text-sm md:text-base font-bold uppercase tracking-[0.5em] mt-3 italic">Sangglede & Fellesskap 2026</p>
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none italic">Perfect Pitch</h1>
+            <p class="text-purple-200 text-lg md:text-xl font-bold uppercase tracking-[0.5em] mt-4 italic">Sangglede & Fellesskap 2026</p>
         </div>
     </header>
 
     <!-- SIDE: ÅRSRAPPORT -->
-    <main id="rapport" class="page-section active flex-grow p-8 md:p-16 space-y-32">
+    <main id="rapport" class="page-section active flex-grow p-8 md:p-20 space-y-40">
         
-        <!-- Hero - DSC_8252.jpg -->
+        <!-- Hero -->
         <section>
-            <div class="relative h-[600px] rounded-[4rem] overflow-hidden shadow-2xl">
+            <div class="relative h-[700px] rounded-[5rem] overflow-hidden shadow-2xl">
                 <img src="DSC_8252.jpg" alt="[Koret på scenen]" class="w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent flex flex-col justify-end p-12 md:p-20 text-white">
-                    <p class="text-purple-400 font-black uppercase tracking-widest mb-2 text-sm md:text-lg italic">Markedsvalidering</p>
-                    <h2 class="text-4xl md:text-6xl font-black italic uppercase leading-tight">100+ solgte billetter & vi imponerte stort!</h2>
-                    <p class="text-lg md:text-2xl text-purple-100 font-medium italic mt-6 max-w-3xl">Vår debutreise beviste at det er plass til et kor som snakker gründerens språk.</p>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent flex flex-col justify-end p-12 md:p-24 text-white">
+                    <p class="text-purple-400 font-black uppercase tracking-widest mb-4 text-xl italic">Markedsvalidering</p>
+                    <h2 class="text-6xl md:text-8xl font-black italic uppercase leading-tight">100+ solgte billetter & vi imponerte stort!</h2>
+                    <p class="text-2xl md:text-4xl text-purple-100 font-medium italic mt-10 max-w-5xl">Vår debutreise beviste at det er plass til et kor som snakker gründerens språk.</p>
                 </div>
             </div>
         </section>
 
         <!-- KPI Section -->
-        <div class="grid grid-cols-2 md:grid-cols-4 border-y border-gray-100 bg-gray-50/50 rounded-3xl overflow-hidden">
-            <div class="p-10 border-r border-gray-100 text-center">
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 italic">Øvelser 2026</p>
-                <p class="text-5xl md:text-6xl font-black text-purple-700 italic">14</p>
-                <p class="text-xs text-gray-500 mt-3 font-bold uppercase">Hittil (5 gjenstår)</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 border-y-4 border-gray-100 bg-gray-50/50 rounded-[4rem] overflow-hidden">
+            <div class="p-16 border-r-2 border-gray-100 text-center">
+                <p class="text-base font-bold text-gray-400 uppercase tracking-widest mb-4 italic">Øvelser 2026</p>
+                <p class="text-7xl md:text-9xl font-black text-purple-700 italic leading-none">14</p>
+                <p class="text-base text-gray-500 mt-6 font-bold uppercase">Hittil (5 gjenstår)</p>
             </div>
-            <div class="p-10 border-r border-gray-100 text-center">
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 italic">Medlemmer</p>
-                <p class="text-5xl md:text-6xl font-black text-purple-700 italic">23</p>
-                <p class="text-xs text-gray-500 mt-3 font-bold uppercase">+ 2 dirigenter</p>
+            <div class="p-16 border-r-2 border-gray-100 text-center">
+                <p class="text-base font-bold text-gray-400 uppercase tracking-widest mb-4 italic">Medlemmer</p>
+                <p class="text-7xl md:text-9xl font-black text-purple-700 italic leading-none">23</p>
+                <p class="text-base text-gray-500 mt-6 font-bold uppercase">+ 2 dirigenter</p>
             </div>
-            <div class="p-10 border-r border-gray-100 text-center">
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 italic">Debut-impact</p>
-                <p class="text-5xl md:text-6xl font-black text-purple-700 italic">100+</p>
-                <p class="text-xs text-gray-500 mt-3 font-bold uppercase italic">Billetter solgt</p>
+            <div class="p-16 border-r-2 border-gray-100 text-center">
+                <p class="text-base font-bold text-gray-400 uppercase tracking-widest mb-4 italic">Debut-impact</p>
+                <p class="text-7xl md:text-9xl font-black text-purple-700 italic leading-none">100+</p>
+                <p class="text-base text-gray-500 mt-6 font-bold uppercase italic">Billetter solgt</p>
             </div>
-            <div class="p-10 text-center">
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 italic">Vannhull</p>
-                <p class="text-5xl md:text-6xl font-black text-purple-700 italic">~75k</p>
-                <p class="text-xs text-gray-500 mt-3 font-bold uppercase">NOK på Skyggesiden</p>
+            <div class="p-16 text-center">
+                <p class="text-base font-bold text-gray-400 uppercase tracking-widest mb-4 italic">Vannhull</p>
+                <p class="text-7xl md:text-9xl font-black text-purple-700 italic leading-none">~75k</p>
+                <p class="text-base text-gray-500 mt-6 font-bold uppercase">NOK på Skyggesiden</p>
             </div>
         </div>
 
         <!-- Medlemsinnsikt -->
-        <section class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-            <div class="space-y-12">
-                <h3 class="text-4xl font-black text-gray-800 uppercase border-l-[12px] border-purple-600 pl-8 italic">Medlemsanalysen: N=16</h3>
-                <div class="space-y-10">
-                    <div class="bg-purple-900 text-white p-10 rounded-[3rem] shadow-2xl italic relative overflow-hidden">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-32 items-start">
+            <div class="space-y-20">
+                <h3 class="text-6xl font-black text-gray-800 uppercase border-l-[20px] border-purple-600 pl-12 italic">Innsikt: N=16</h3>
+                <div class="space-y-16">
+                    <div class="bg-purple-900 text-white p-16 rounded-[4rem] shadow-2xl italic relative overflow-hidden">
                         <div class="relative z-10">
-                            <h4 class="text-purple-300 font-black uppercase text-xs tracking-[0.2em] mb-2 italic">Kulturmål</h4>
-                            <p class="text-3xl font-black mb-3 italic">87,5 % ønsker Runway-regelen</p>
-                            <p class="text-base md:text-lg text-purple-100 opacity-90 leading-relaxed italic">
-                                14 av 16 medlemmer er enige: For å sikre kvalitet krever vi minst 80 % oppmøte.
+                            <h4 class="text-purple-300 font-black uppercase text-base tracking-[0.3em] mb-6 italic">Commitment</h4>
+                            <p class="text-5xl font-black mb-6 italic">87,5 % ønsker Runway-regelen</p>
+                            <p class="text-2xl text-purple-100 opacity-90 leading-relaxed italic">
+                                14 av 16 medlemmer stemte JA til en fast oppmøteforventning for å sikre kvalitet.
                             </p>
                         </div>
-                        <div class="absolute -right-6 -bottom-6 opacity-10 text-9xl font-black select-none italic">87%</div>
+                        <div class="absolute -right-12 -bottom-12 opacity-10 text-[18rem] font-black select-none italic">87%</div>
                     </div>
-                    <img src="PHOTO-2026-01-06-18-25-39.jpg" alt="[Bilde fra øvelse]" class="img-featured h-[500px] pink-hat-focus shadow-2xl">
+                    <img src="PHOTO-2026-01-06-18-25-39.jpg" alt="[Øvelse]" class="img-featured pink-hat-focus shadow-2xl">
                 </div>
             </div>
-            <div class="space-y-12 italic">
-                <div class="bg-purple-50 p-10 rounded-[3.5rem] border border-purple-100 shadow-sm">
-                    <h4 class="font-black text-purple-900 uppercase text-xl mb-8 underline decoration-4 underline-offset-8">Sammensetning</h4>
-                    <div class="space-y-5 text-sm md:text-base font-black uppercase">
-                        <div class="flex justify-between items-center bg-white p-5 rounded-2xl shadow-sm border border-purple-100">
-                            <span>The Builders (Gründere/Ansatte)</span>
-                            <span class="text-purple-600 text-xl italic">50%</span>
+            <div class="space-y-20 italic pt-12">
+                <div class="bg-purple-50 p-16 rounded-[4rem] border border-purple-100 shadow-sm">
+                    <h4 class="font-black text-purple-900 uppercase text-3xl mb-12 underline decoration-8 underline-offset-8 italic">Sammensetning</h4>
+                    <div class="space-y-8 text-2xl font-black uppercase italic">
+                        <div class="flex justify-between items-center bg-white p-8 rounded-3xl shadow-sm border border-purple-100">
+                            <span>The Builders (Gründere)</span>
+                            <span class="text-purple-600 text-5xl italic">50%</span>
                         </div>
-                        <div class="flex justify-between items-center bg-white p-5 rounded-2xl shadow-sm border border-purple-100">
-                            <span>Startup Village (Investering/Hubs)</span>
-                            <span class="text-purple-400 text-xl italic">33%</span>
+                        <div class="flex justify-between items-center bg-white p-8 rounded-3xl shadow-sm border border-purple-100">
+                            <span>Startup Village</span>
+                            <span class="text-purple-400 text-5xl italic">33%</span>
                         </div>
-                    </div>
-                    <div class="mt-12 pt-10 border-t-2 border-purple-200">
-                        <h4 class="font-black text-purple-900 uppercase text-lg mb-6 italic italic">Øvingsfrekvens</h4>
-                        <div class="flex h-5 w-full bg-gray-200 rounded-full overflow-hidden mb-4 shadow-inner">
-                            <div class="bg-purple-600 h-full" style="width: 67%"></div>
-                            <div class="bg-purple-400 h-full" style="width: 17%"></div>
-                            <div class="bg-gray-300 h-full" style="width: 16%"></div>
-                        </div>
-                        <p class="text-sm font-bold text-gray-500 italic">67% Perfekt balanse (annenhver uke) | 17% Øve oftere</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PRESSE - Shifterbilde.png -->
-        <section class="bg-slate-900 rounded-[5rem] overflow-hidden text-white flex flex-col lg:flex-row shadow-2xl italic">
+        <!-- PRESSE - Shifter -->
+        <section class="bg-slate-900 rounded-[6rem] overflow-hidden text-white flex flex-col lg:flex-row shadow-2xl italic">
             <div class="lg:w-1/2">
-                <img src="Shifterbilde.png" alt="[Shifter Artikkel]" class="w-full h-full object-cover min-h-[400px]">
+                <img src="Shifterbilde.png" alt="[Shifter Artikkel]" class="w-full h-full object-cover min-h-[600px]">
             </div>
-            <div class="lg:w-1/2 p-16 md:p-24 flex flex-col justify-center italic">
-                <p class="text-purple-400 font-bold text-sm uppercase tracking-[0.4em] mb-6 italic">Strategisk Synlighet</p>
-                <h3 class="text-4xl md:text-5xl font-black uppercase leading-tight italic">"De korer om det harde gründerlivet"</h3>
-                <p class="text-gray-400 text-xl mt-8 leading-relaxed italic">
-                    Omtalen i Shifter bekrefter at Perfect Pitch fyller et tomrom. Vi er ikke bare et kor, vi er stemmen til hele økosystemet.
+            <div class="lg:w-1/2 p-20 md:p-32 flex flex-col justify-center italic">
+                <p class="text-purple-400 font-bold text-base uppercase tracking-[0.5em] mb-10 italic">Strategisk Synlighet</p>
+                <h3 class="text-6xl md:text-7xl font-black uppercase leading-tight italic">"De korer om det harde gründerlivet"</h3>
+                <p class="text-gray-400 text-3xl mt-12 leading-relaxed italic">
+                    Omtalen i Shifter bekrefter at Perfect Pitch fyller et tomrom. Vi er stemmen til økosystemet.
                 </p>
-                <div class="mt-12 italic">
-                    <a href="
+                <div class="mt-16 italic">
+                    <a href="https://www.shifter.no/nyheter/konkurs-pengetorke-og-investorjakt-de-korer-om-det-harde-gruenderlivet/457093" target="_blank" class="text-2xl font-bold underline decoration-purple-500 underline-offset-8 hover:text-purple-300 transition-colors italic">Les saken hos Shifter &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONSERT-MAGI GALLERI -->
+        <section class="space-y-16">
+            <h3 class="text-6xl font-black text-gray-800 uppercase border-l-[20px] border-purple-600 pl-12 italic">Konsert-magi: Debuten</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 italic">
+                <img src="DSC_8116.jpg" alt="C1" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+                <img src="DSC_8127.jpg" alt="C2" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+                <img src="DSC_8185.jpg" alt="C3" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+                <img src="DSC00133.jpg" alt="C5" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+                <img src="DSC00143.jpg" alt="C6" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+                <img src="DSC00164.jpg" alt="C7" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+                <img src="DSC00187.jpg" alt="C8" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+                <img src="DSC_8252.jpg" alt="C10" class="img-concert shadow-2xl scale-100 hover:scale-105 transition-transform">
+            </div>
+        </section>
+
+        <!-- Repertoar & Backlog -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-32 italic">
+            <div class="bg-white border-4 border-gray-100 p-16 rounded-[5rem] shadow-sm space-y-16 italic">
+                <h3 class="text-5xl font-black text-gray-800 uppercase border-l-[16px] border-purple-600 pl-10 italic">The Keepers</h3>
+                <ul class="space-y-8 font-bold text-3xl italic">
+                    <li class="flex justify-between p-8 bg-purple-50 rounded-3xl shadow-sm italic"><span>Optimist / Penger</span><span>100%</span></li>
+                    <li class="flex justify-between p-8 bg-purple-50 rounded-3xl shadow-sm italic"><span>Lean on me</span><span>67%</span></li>
+                    <li class="flex justify-between p-8 bg-purple-50 rounded-3xl shadow-sm italic"><span>Fix You / Se Ilden Lyse</span><span>50%</span></li>
+                </ul>
+                <div class="pt-12 border-t-2 border-gray-100 italic">
+                    <p class="text-xl font-black text-gray-400 uppercase mb-4 italic">Cut: Sanger vi legger ned</p>
+                    <p class="text-2xl text-gray-500 italic">Langt å gå, Fragile, Don't Worry, Tradisjonelle kor-salmer.</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-900 p-16 rounded-[5rem] text-white shadow-2xl flex flex-col italic">
+                <h3 class="text-4xl font-black uppercase tracking-widest mb-16 border-b-4 border-gray-800 pb-8 italic">Den Store Backlogen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-xl font-bold opacity-90 italic">
+                    <ul class="space-y-4">
+                        <li>• The Gambler</li><li>• Start me up</li><li>• Billionaire</li><li>• Final Countdown</li><li>• Dont stop believing</li><li>• Show must go on</li><li>• Crazy</li><li>• Winners takes it all</li><li>• It's a long way to the top</li><li>• Spelldåsa</li><li>• Mitt liv</li>
+                    </ul>
+                    <ul class="space-y-4">
+                        <li>• Oops I did it again</li><li>• Work, work bitch</li><li>• Churn, baby, churn</li><li>• Should I stay or go</li><li>• All by myself</li><li>• This is me</li><li>• How far I'll go</li><li>• Stressed out</li><li>• Stronger</li><li>• Fight song</li><li>• I Will survive</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SIDE: KULTURKODE -->
+    <main id="kulturkode" class="page-section flex-grow p-10 md:p-32 space-y-24 italic">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-32">
+                <h2 class="text-7xl md:text-9xl font-black pitch-purple mb-8 italic leading-none uppercase">THE PITCH GUIDE</h2>
+                <p class="text-2xl text-gray-500 uppercase tracking-[0.8em] font-black italic">Vår felles kulturkode</p>
+                <div class="h-4 w-64 pitch-bg mx-auto mt-10 rounded-full italic"></div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-16 italic">
+                <div class="bg-white p-16 rounded-[5rem] shadow-2xl border-t-[20px] border-purple-600">
+                    <h3 class="text-4xl font-black uppercase mb-8 italic">🚀 High Performance – High Harmony</h3>
+                    <p class="text-3xl text-gray-600 leading-relaxed italic">
+                        Vi tar med oss gründerens gjennomføringskraft inn på øving. Profesjonelle i det musikalske, varme i det sosiale. Vi er her for å løfte hverandre – både på scenen og i økosystemet.
+                    </p>
+                </div>
+
+                <div class="bg-red-50 p-16 rounded-[5rem] shadow-2xl border-t-[20px] border-red-500">
+                    <h3 class="text-4xl font-black text-red-700 uppercase mb-10 italic">📵 Choirmate & Økonomi</h3>
+                    <div class="space-y-8">
+                        <p class="text-3xl font-bold text-red-800 underline italic italic">Hvert klikk i appen er penger inn!</p>
+                        <div class="bg-white p-12 rounded-[3rem] border-4 border-red-200 shadow-inner italic">
+                            <p class="text-3xl text-gray-800 leading-snug">
+                                For at koret skal få utbetalt støtte fra korforbundet (VO-midler), må vi føre nøyaktige lister. Registrer fravær tidlig i Choirmate! <br><br>
+                                <span class="font-black italic text-red-600">WhatsApp-regelen:</span> Vi sender ALDRI fravær her. Det holder kanalen støyfri for viktigere nyheter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-50 p-16 rounded-[5rem] shadow-2xl border-t-[20px] border-purple-400 italic">
+                    <h3 class="text-4xl font-black text-purple-900 uppercase mb-8 italic">🤝 Opptak: Mindset over Tittel</h3>
+                    <p class="text-3xl text-purple-800 leading-relaxed italic">
+                        Ved rekruttering ser vi etter det rette gründer-hodet. Du trenger ikke være CEO; vi ser etter engasjement og evnen til å bidra positivt til fellesskapet. Styret styrer opptaket for å sikre stemmebalanse.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SIDE: VEDTEKTER -->
+    <main id="vedtekter" class="page-section flex-grow p-10 md:p-32 italic">
+        <div class="max-w-6xl mx-auto bg-white p-16 md:p-32 rounded-[6rem] shadow-inner border-4 border-gray-100 italic">
+            <h2 class="text-6xl font-black mb-20 border-b-[16px] border-purple-100 pb-10 uppercase italic leading-none">Vedtekter for Perfect Pitch</h2>
+            <div class="statutes-grid text-2xl leading-relaxed text-gray-700 italic">
+                <strong>§ 1 Foreningens navn</strong> <p>Foreningens navn er: Perfect Pitch.</p>
+                <strong>§ 2 Formål</strong> <p>Perfect Pitch skal være en kraftfull arena for gründere og innovatører, der sang brukes for å styrke mental resiliens, fremme kreativ lederutvikling og bygge et støttende community.</p>
+                <strong>§ 4 Medlemmer</strong> <p>Koret er åpent for gründere og personer tilknyttet startup-økosystemet. Opptak styres av behovet for balanse mellom stemmegruppene.</p>
+                <strong>§ 9 Styret</strong> <p>Foreningen ledes av et styre på 3 til 5 medlemmer. Styret er høyeste myndighet mellom årsmøtene.</p>
+                <p class="text-base text-gray-400 mt-32 italic">Siste revisjon: April 2026</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-32 text-center border-t border-gray-100 italic">
+        <p class="text-xl font-black text-gray-400 uppercase tracking-[1.2em] italic">Perfect Pitch &mdash; Sangglede & Fellesskap</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('nav-active'));
+            const link = document.getElementById('link-' + pageId);
+            if(link) link.classList.add('nav-active');
+            window.scrollTo(0,0);
+        }
+        window.onhashchange = function() {
+            const hash = window.location.hash.substring(1) || 'rapport';
+            showPage(hash);
+        }
+        window.onload = function() {
+            const hash = window.location.hash.substring(1) || 'rapport';
+            showPage(hash);
+        }
+    </script>
+</body>
+</html>
